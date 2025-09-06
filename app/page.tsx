@@ -1,9 +1,15 @@
 import React from 'react'
+import { Navbar } from './_Components/Header'
+import { HeroSectionOne } from './_Components/Hero'
+
 
 const page = () => {
   return (
-    <div className=' text-red-400'>Homepage</div>
-  
+  <main>
+    <div className='min-h-screen w-full'>
+      <HeroSectionOne/>
+    </div>
+  </main>
   )
 }
 
