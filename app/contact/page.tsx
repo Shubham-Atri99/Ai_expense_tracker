@@ -7,9 +7,9 @@ import { Card } from "../_Components/Card";
 export function ContactHero() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
-      {/* Hero Section */}
+      
       <div className="relative z-20 px-4 py-10 md:py-20">
-        {/* Heading */}
+       
         <h1 className="mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-5xl lg:text-7xl dark:text-slate-300">
           {"Contact ExpenseTracker AI"
             .split(" ")
@@ -41,7 +41,7 @@ export function ContactHero() {
           here to assist you with intelligent financial management.
         </motion.p>
 
-        {/* Buttons */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

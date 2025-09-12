@@ -9,7 +9,7 @@ datasource db {
 }
 
 model User {
-  id          Int      @id @default(autoincrement())
+  id          String       @id @default(uuid())
   clerkUserId String
   email       String   @unique
   password    String
@@ -25,7 +25,7 @@ model Record {
   amount    Float
   category  String   @default("Other")
   date      DateTime @default(now())
-  userId    Int
+  userId    String
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
