@@ -1,9 +1,11 @@
-"use client";
+
 
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { checkUser } from "@/lib/Checkuser";
 
 export const Navbar = () => {
+  const user =checkUser();
   return (
     <nav className="flex w-full items-center justify-between bg-neutral-900 px-6 py-4 shadow-md">
       {/* Left side - Logo + Nav Links */}
