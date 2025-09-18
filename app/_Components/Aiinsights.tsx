@@ -28,6 +28,7 @@ const AIInsights = () => {
     setIsLoading(true);
     try {
       const res = await fetch('/api/ai/insights');
+      
       const newInsights = await res.json();
       setInsights(newInsights);
       setLastUpdated(new Date());
