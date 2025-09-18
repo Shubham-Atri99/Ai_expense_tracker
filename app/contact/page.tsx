@@ -37,7 +37,7 @@ export function ContactHero() {
           transition={{ duration: 0.3, delay: 0.8 }}
           className="mx-auto max-w-2xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Have questions about AI-powered expense tracking or need help? We're
+          Have questions about AI-powered expense tracking or need help? We&apos;re
           here to assist you with intelligent financial management.
         </motion.p>
 
@@ -117,7 +117,7 @@ Email support: Available 24/7 with responses within 24 hours`}
 
 AI Features: Questions about AI insights? Our AI documentation has answers.
 
-Account & Billing: Account issues or billing questions? Contact us directly.`}
+Account & Billing: Account issues or billing questions? Contact us directly.`.replace(/'/g, "&apos;")}
             icon={<HelpCircle className="h-6 w-6 text-violet-600" />}
           />
         </div>
